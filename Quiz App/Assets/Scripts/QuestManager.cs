@@ -71,8 +71,9 @@ public class QuestManager : MonoBehaviour
         var confettiSettings = confetti.main;
         confettiSettings.loop ^= false;
         correctAnswerSFX.Play();
-        ReloadQuest();
+        
         youWin.gameObject.SetActive(false);
         questsParent.gameObject.SetActive(true);
+        ReloadQuest();
     }
 }
